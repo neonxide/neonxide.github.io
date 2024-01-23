@@ -20,9 +20,9 @@
     --bs-nav-a-hv:0 0 0.8em #ffbc42, inset 0 0 0.3em #ffbc42;
     --bs-nav-a-hv-a:0 0 1em #ffbc42, inset 0 0 0.3em #ffbc42;
     --ts-ab-h1:0 0 0.1em hsl(0 0% 100% / 0.3),
-    0 0 0.5em currentColor;
-    --ts-ab-p:0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.25em currentColor;
+    0 0 0.22em currentColor;
+    --ts-ab-p:0 0 0.1em hsl(0 0% 100% / 0.3),
+    0 0 0.2em currentColor;
     --bs-ab-img:0 0 0.8em #d81159;
     --bs-ab-img-hv:0 0 0.8em #affc41;
  
@@ -46,8 +46,8 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     width: 90%;
-    margin: 0 auto;
-    margin-top: 5.5%;
+    margin: 5.5% auto 5.5% auto;
+
     border: 3px solid var(--clr-5);
     border-radius: 10px;
     box-shadow: var(--bs-about);
@@ -85,7 +85,7 @@ body {
     color: var(--clr-5);
     text-shadow:var(--ts-nav-a) ;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 400;
     padding: .24em .48em;
     border: 3px solid var(--clr-1);
@@ -140,7 +140,7 @@ body {
     font-weight: 400;
     color: var(--clr-1);
     text-shadow:var(--ts-ab-h1);
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -155,7 +155,7 @@ body {
     color: var(--clr-6);
     text-shadow:var(--ts-ab-p);
     text-align: center;
-    font-size: 1.6em;
+    font-size: 2em;
     letter-spacing: 0.2em;
     line-height: 2em;
 }
@@ -173,109 +173,142 @@ body {
     border: 3px solid var(--clr-6) ;
 }
 
-@media (max-width:1200px) {
-    .about-desc-left h1 {
+@media (max-width:1100px) {
+    .about-desc {
+        flex-direction: column;
+    }
+    .nav-bar {
+        margin: -1.7em auto;
+        }
+
+    .nav-bar span {
+        font-size: 2.8em;
+        padding: .18em .36em;
+        }
+        .nav-bar a {
         font-size: 1.8em;
-        line-height: 1.8em;
+
+        padding: .22em .44em;
+          }
+        .nav-bar-right {
+        gap: 1.8em;
+         } 
+        .about-desc {
+         margin: 7em auto 5em auto;
+        }
+        .about-desc-left h1 {
+        font-size: 3em;
+
+        }
+        .about-desc-left p {
+        margin-top: 1.2em;
+        font-size: 2.2em;
+
 }
-    .about-desc-left p {
-        font-size: 1.4em;
-        line-height: 1.8em;
 }
-}
+
 
 @media (max-width:900px) {
     .nav-bar span {
-        font-size: 2.6em;
-        padding: .18em .36em;
-        }
-    .nav-bar a {
-        font-size: 1.6em;
-        padding: .22em .44em;
-        border: 2.8px solid var(--clr-1);
-        border-radius: 9px;
-             }
-    .nav-bar {
-        margin: -1.5em auto;
-        }
-        .nav-bar-right {
-            gap: 1.2em;
-            } 
-        .about-desc-left h1 {
-            font-size: 1.6em;
-            line-height: 1.6em;
-        }
-        .about-desc-left p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-        }
-}
-
-@media (max-width:770px) {
-    .nav-bar span {
-        font-size: 2.2em;
-        padding: .17em .34em;
-        }
-    .nav-bar a {
-        font-size: 1.2em;
-        padding: .20em .40em;
-        border: 2.6px solid var(--clr-1);
-        border-radius: 8px;
-        
-             }
-    .nav-bar {
-        margin: -1.3em auto;
-        }
-        .nav-bar-right {
-            gap: 1em;
+            font-size: 2.7em;
+            padding: .16em .32em;
             }
-            .about-desc-left h1 {
-                font-size: 1.4em;
-                line-height: 1.4em;
+            .nav-bar {
+                margin: -1.52em auto;
+                }
+           .nav-bar a {
+            font-size: 1.6em;
+    
+            padding: .2em .4em;
+              }
+            .nav-bar-right {
+            gap: 1.6em;
+             }
+            .about-desc {
+             margin: 7em auto 5em auto;
             }
             .about-desc-left p {
-                font-size: 1em;
-                line-height: 1.4em;
-            }
-}
+            margin-top: 1.2em;
+            font-size: 2.2em;
+    
+    }}
 
-@media (max-width:620px) {
-    .nav-bar span {
-        font-size: 1.8em;
-        padding: .15em .30em;
+    @media (max-width:830px) {
+        .nav-bar span {
+                font-size: 2.6em;
+                padding: .15em .30em;
+                }
+                .nav-bar {
+                    margin: -1.52em auto;
+                    }
+               .nav-bar a {
+                font-size: 1.5em;
+               border-radius: 8px;
+                padding: .2em .4em;
+                  }
+                .nav-bar-right {
+                gap: 1.5em;
+                 }
+                .about-desc {
+                 margin: 6em auto 3em auto;
+                }
+                .about-desc-left h1 {
+                    font-size: 2.4em;
+                    }
+                .about-desc-left p {
+                margin-top: 0.8em;
+                font-size: 2.2em;
+        
         }
-    .nav-bar a {
-        font-size: 1em;
-        padding: .20em .40em;
-        border: 2.4px solid var(--clr-1);
-        border-radius: 6px;
+    }
+
+    @media (max-width:740px) {
+        
+        .nav-bar span {
+            font-size: 2.3em;
+            padding: .14em .28em;
+            }
+.nav-bar {
+                margin: -1.5em auto;
+                }
+.nav-bar a {
+            font-size: 1.5em;
+           border-radius: 8px;
+            padding: .19em .38em;
+              }
+.nav-bar-right {
+            gap: 1em;
              }
-    .nav-bar {
-        margin: -1.05em auto;
-        }
-        .nav-bar-right {
+             .about-desc {
+                margin: 5em auto 3em auto;
+               }
+               .about-desc-left p {
+                margin-top: 1em;
+    }
+    }
+
+    @media (max-width:670px) {
+        
+        .nav-bar span {
+            font-size: 2em;
+            padding: .12em .24em;
+            border-radius: 7px;
+            }
+.nav-bar {
+                margin: -1.4em auto;
+                }
+.nav-bar a {
+            font-size: 1.4em;
+           border-radius: 7px;
+            padding: .16em .32em;
+              }
+.nav-bar-right {
             gap: 0.8em;
-            }
-        .about-desc {
-            flex-direction: column;
-        }
-}
-
-@media (max-width:496px) {
-    .nav-bar span {
-        font-size: 1.4em;
-        padding: .15em .30em;
-        }
-    .nav-bar a {
-        font-size: 0.8em;
-        padding: .20em .40em;
-        border: 2.2px solid var(--clr-1);
-        border-radius: 4px;
              }
-    .nav-bar {
-        margin: -0.8em auto;
-        }
-        .nav-bar-right {
-            gap: 0.6em;
-            }
-}
+             .about-desc {
+                margin: 4em auto 2.5em auto;
+               }
+               .about-desc-left p {
+                margin-top: 0.4em;
+    }
+    }
