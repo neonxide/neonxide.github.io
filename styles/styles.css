@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+:root {
+    --clr-1: #73d2de;--clr-2: #218380;--clr-3: #8f2d56;
+    --clr-4: #d81159;--clr-5: #ffbc42;--clr-6: #affc41;
+    --clr-7: #f2542d;
+    --bs-about:0 0 1em #ffbc42, inset 0 0 1em #ffbc42;
+    --ts-span:0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.4em currentColor;
+    --bs-span:0 0 0.5em #d81159,inset 0 0 0.4em #d81159;
+    --bs-span-hv:0 0 0.5em #affc41,inset 0 0 0.4em #affc41;
+    --ts-nav-a:0 0 0.1em hsl(0 0% 100% / 0.3),
+    0 0 0.2em currentColor;
+    --bs-nav-a: 0 0 0.4em #73d2de, inset 0 0 0.3em #73d2de;
+    --ts-nav-a-hv: 0 0 0.1em hsl(0 0% 100% / 0.3),
+    0 0 0.1em #999 ;
+    --bs-nav-a-hv:0 0 0.8em #ffbc42, inset 0 0 0.3em #ffbc42;
+    --bs-nav-a-hv-a:0 0 1em #ffbc42, inset 0 0 0.3em #ffbc42;
+    --ts-ab-h1:0 0 0.1em hsl(0 0% 100% / 0.3),
+    0 0 0.5em currentColor;
+    --ts-ab-p:0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.25em currentColor;
+    --bs-ab-img:0 0 0.8em #d81159;
+    --bs-ab-img-hv:0 0 0.8em #affc41;
+ 
+}
+
+
+body {
+    /* background-color: black; */
+    background-image: url(https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+::selection {
+    background-color: var(--clr-2);
+    color: var(--clr-1);
+}
+
+.about {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5.5%;
+    border: 3px solid var(--clr-5);
+    border-radius: 10px;
+    box-shadow: var(--bs-about);
+}
+
+.nav-bar {
+    display: flex;
+    margin: -1.9em auto;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
+    width: 90%;
+}
+
+.nav-bar span {
+    user-select: none;
+    background-color: black;
+    color: var(--clr-6);
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em .4em;
+    text-shadow: var(--ts-span);
+    border: 4px solid var(--clr-4);
+    border-radius: 10px;
+    box-shadow: var(--bs-span);
+}
+
+.nav-bar span:hover {
+    color: var(--clr-4);
+    border: 3px solid var(--clr-6) ;
+    box-shadow: var(--bs-span-hv);
+}
+
+.nav-bar a {
+    color: var(--clr-5);
+    text-shadow:var(--ts-nav-a) ;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding: .24em .48em;
+    border: 3px solid var(--clr-1);
+    border-radius: 10px;
+    box-shadow: var(--bs-nav-a);
+    }
+
+.nav-bar a:hover,
+.nav-bar a:focus-within {
+    background-color: #111;
+    color: #fff;
+    text-shadow:var(--ts-nav-a-hv);
+    border: 3px solid var(--clr-5);
+    box-shadow:var(--bs-nav-a-hv);
+}
+
+.nav-bar a:active {
+    color: black;
+    background-color: var(--clr-5);
+    text-shadow: none;
+    box-shadow: var(--bs-nav-a-hv-a);
+}
+
+   .nav-bar-right {
+    display: flex;
+    gap: 2em;
+   } 
+
+   .nav-bar-left, .nav-bar-right a {
+    background-color: black;
+   }
+
+ .about-desc {
+    
+    position: relative;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 10em auto;
+    
+}
+
+.about-desc-left {
+    position: relative;
+    width: 100%;
+        }
+
+.about-desc-left h1 {
+    font-family: 'Press Start 2p', sans-serif;
+    font-weight: 400;
+    color: var(--clr-1);
+    text-shadow:var(--ts-ab-h1);
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    
+}
+
+.about-desc-left p {
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    font-weight: 700;
+    margin-top: 2em;
+    color: var(--clr-6);
+    text-shadow:var(--ts-ab-p);
+    text-align: center;
+    font-size: 1.6em;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+
+.arcade {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--clr-4);
+    box-shadow: var(--bs-ab-img);
+}
+
+.arcade:hover {
+    box-shadow: var(--bs-ab-img-hv);
+    border: 3px solid var(--clr-6) ;
+}
+
+@media (max-width:1200px) {
+    .about-desc-left h1 {
+        font-size: 1.8em;
+        line-height: 1.8em;
+}
+    .about-desc-left p {
+        font-size: 1.4em;
+        line-height: 1.8em;
+}
+}
+
+@media (max-width:900px) {
+    .nav-bar span {
+        font-size: 2.6em;
+        padding: .18em .36em;
+        }
+    .nav-bar a {
+        font-size: 1.6em;
+        padding: .22em .44em;
+        border: 2.8px solid var(--clr-1);
+        border-radius: 9px;
+             }
+    .nav-bar {
+        margin: -1.5em auto;
+        }
+        .nav-bar-right {
+            gap: 1.2em;
+            } 
+        .about-desc-left h1 {
+            font-size: 1.6em;
+            line-height: 1.6em;
+        }
+        .about-desc-left p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+}
+
+@media (max-width:770px) {
+    .nav-bar span {
+        font-size: 2.2em;
+        padding: .17em .34em;
+        }
+    .nav-bar a {
+        font-size: 1.2em;
+        padding: .20em .40em;
+        border: 2.6px solid var(--clr-1);
+        border-radius: 8px;
+        
+             }
+    .nav-bar {
+        margin: -1.3em auto;
+        }
+        .nav-bar-right {
+            gap: 1em;
+            }
+            .about-desc-left h1 {
+                font-size: 1.4em;
+                line-height: 1.4em;
+            }
+            .about-desc-left p {
+                font-size: 1em;
+                line-height: 1.4em;
+            }
+}
+
+@media (max-width:620px) {
+    .nav-bar span {
+        font-size: 1.8em;
+        padding: .15em .30em;
+        }
+    .nav-bar a {
+        font-size: 1em;
+        padding: .20em .40em;
+        border: 2.4px solid var(--clr-1);
+        border-radius: 6px;
+             }
+    .nav-bar {
+        margin: -1.05em auto;
+        }
+        .nav-bar-right {
+            gap: 0.8em;
+            }
+        .about-desc {
+            flex-direction: column;
+        }
+}
+
+@media (max-width:496px) {
+    .nav-bar span {
+        font-size: 1.4em;
+        padding: .15em .30em;
+        }
+    .nav-bar a {
+        font-size: 0.8em;
+        padding: .20em .40em;
+        border: 2.2px solid var(--clr-1);
+        border-radius: 4px;
+             }
+    .nav-bar {
+        margin: -0.8em auto;
+        }
+        .nav-bar-right {
+            gap: 0.6em;
+            }
+}
