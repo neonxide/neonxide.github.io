@@ -256,10 +256,10 @@ body {
                     font-size: 2.4em;
                     }
                 .about-desc-left p {
-                margin-top: 0.8em;
-                font-size: 2.2em;
+                margin-top: 0.7em;
+                font-size: 2em;
         
-        }
+                }
     }
 
     @media (max-width:740px) {
@@ -282,7 +282,11 @@ body {
              .about-desc {
                 margin: 5em auto 3em auto;
                }
+               .about-desc-left h1 {
+                font-size: 2.2em;
+                }
                .about-desc-left p {
+                font-size: 1.9em;
                 margin-top: 1em;
     }
     }
@@ -295,7 +299,7 @@ body {
             border-radius: 7px;
             }
 .nav-bar {
-                margin: -1.4em auto;
+                margin: -1.3em auto;
                 }
 .nav-bar a {
             font-size: 1.4em;
@@ -305,10 +309,165 @@ body {
 .nav-bar-right {
             gap: 0.8em;
              }
+             
+               .about-desc-left p {
+                font-size: 1.8em;
+                margin-top: 0.3em;
+    }
+
+    .about-desc {
+        margin: 5em auto 2.2em auto;
+       }
+    }
+
+    @media (max-width:608px) {
+        
+        .nav-bar span {
+            font-size: 1.8em;
+            padding: .1em .3em;
+            border-radius: 6px;
+            }
+.nav-bar {
+                margin: -1.1em auto;
+                }
+.nav-bar a {
+            font-size: 1.2em;
+           border-radius: 5px;
+            padding: .16em .32em;
+              }
+.nav-bar-right {
+            gap: 0.7em;
+             }
              .about-desc {
                 margin: 4em auto 2.5em auto;
                }
+               .about-desc-left h1 {
+                font-size: 2em;
+                }
                .about-desc-left p {
-                margin-top: 0.4em;
+                font-size: 1.5em;
+                margin: 0.3em auto;
+    }
+    .arcade {
+        margin-top:-1.5em;
     }
     }
+
+    @media (max-width:553px) {
+        .about-desc-left h1 {
+            font-size: 1.8em;
+        }
+        .nav-bar {
+            margin: -1.2em auto;
+            }
+        
+        .about-desc-left p {
+         font-size: 1.4em;
+         margin: 0.3em auto;
+}}
+    
+
+    @media (max-width:538px) {
+        .nav-bar span {
+            font-size: 1.6em;
+            padding: .1em .3em;
+            border-radius: 5px;
+            }
+.nav-bar {
+                margin: -1em auto;
+                }
+.nav-bar a {
+            font-size: 1em;
+           border-radius: 5px;
+           border: 6;
+            padding: .16em .32em;
+              }
+.nav-bar-right {
+            gap: 0.5em;
+             }
+             .about-desc-left p {
+                font-size: 1.3em;
+       }
+
+    }
+
+    @media (max-width:497px) {
+        .nav-bar span {
+            font-size: 1.5em;
+            padding: .1em .3em;
+            border-radius: 5px;
+            }
+.nav-bar {
+                margin: -0.95em auto;
+                }
+                .about-desc-left h1 {
+                    font-size: 1.7em;
+                }
+.nav-bar a {
+            font-size: 0.9em;
+           border-radius: 5px;
+
+            padding: .16em .32em;
+              }
+.nav-bar-right {
+            gap: 0.5em;
+             }
+             .about-desc-left p {
+                font-size: 1.2em;
+}
+
+    }
+
+    @media (max-width:470px) {
+        .nav-bar span {
+            font-size: 1.4em;
+            padding: .09em .28em;
+            border-radius: 5px;
+            }
+.nav-bar {
+                margin: -0.8em auto;
+                }
+                .about-desc-left h1 {
+                    font-size: 1.5em;
+                }
+.nav-bar a {
+            font-size: 0.8em;
+           border-radius: 5px;
+
+            padding: .16em .32em;
+              }
+.nav-bar-right {
+            gap: 0.5em;
+             }
+             .about-desc-left p {
+                font-size: 1.1em;
+       }
+
+    }
+
+    @media (max-width:416px) {
+        .about-desc-left h1 {
+                            font-size: 1.4em;
+                        }
+        }
+
+        @media (max-width:386px) {
+            .about-desc-left h1 {
+                                font-size: 1.3em;
+                            }
+                            .nav-bar span {
+                                font-size: 1.2em;
+                                }
+            }
+
+            @media (max-width:359px) {
+                .about-desc-left h1 {
+                                    font-size: 1.2em;
+                                }
+                                .nav-bar a {
+                                    font-size: 0.7em;
+                        }
+    }
+
+     
+        
